@@ -1,13 +1,147 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  /* margin: 0;
+  padding: 0; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.main {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+.content {
+  padding: 12px;
+  margin-top: -30px;
+  word-spacing: 7px;
+  line-height: 25px;
+  font-weight: 100;
+  font-size: 1rem;
+}
+ 
+.food-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: -30px;
+}
+img {
+  width: 380px;
+  height: 270px;
+  border-radius: 1.2%;
+}
+.header {
+  text-align: center;
+}
+.btn {
+  color: white;
+  background-color: #f59e0b;
+  width: 70px;
+  text-align: center;
+  padding: 2px;
+  border-radius: 4.8%;
+  transition: 1.5s ease-in-out all;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: brown;
+}
+ul {
+  margin: 0 auto;
+}
+
+.btn-con {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  width: 400px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.cont {
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 5px;
+  column-gap: 20px;
+}
+.price {
+  background-color: #f59e0b;
+  width: 50px;
+  color: white;
+  padding: 3px;
+  border-radius: 8%;
+}
+.food {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.btn.active {
+  /* Apply a red background color for active buttons */
+  color: #fff; /* Set the font color to white for active buttons */
+  /* Add any other styles to visually distinguish the active button */
+}
+
+@media screen and (max-width: 650px) {
+  .main{
+    margin-left:8.5px !important;
+  }
+  .cont {
+    grid-template-columns: repeat(1, 1fr) !important;
+    width: 300px !important;
+    margin: 0 auto !important;
+  }
+  img {
+    width: 290px;
+    height: 220px;
+  }
+  ul {
+    width: 150px !important;
+    
+    padding: 90px;
+  }
+  li {
+    margin-right: 5px;
+  }
+  .header {
+    margin-left: -30px !important;
+    margin-top: 60px !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .main{
+    margin-left: -10px  ;
+  }
+  .cont {
+    grid-template-columns: repeat(2, 1fr);
+    /* width: 300px; */
+    margin: 0 100px 50px;
+  }
+  ul {
+    width: 150px !important;
+
+    padding: 90px;
+  }
+  li {
+    margin-right: 5px;
+  }
+  img {
+    width: 290px;
+    height: 220px;
+  }
+  .header {
+    margin-left: -15px !important;
+    margin-top: 60px !important;
+  }
 }
